@@ -1,0 +1,16 @@
+{
+    "name": "artengin/composer-event-tester",
+    "description": "Minimal Laravel package for testing Composer events",
+    "autoload": {
+        "psr-4": {
+            "Artengin\\ComposerEventTester\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Artengin\\ComposerEventTester\\ComposerEventTesterServiceProvider"
+            ]
+        }
+    }
+}
