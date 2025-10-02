@@ -9,3 +9,10 @@ Install:
 
 ```bash
 composer require artengin/composer-event-tester
+```
+
+Uninstall:
+
+```bash
+composer remove artengin/composer-event-tester
+```
