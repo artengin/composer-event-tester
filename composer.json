@@ -1,0 +1,21 @@
+{
+    "name": "artengin/composer-event-tester",
+    "description": "Minimal Laravel package for testing Composer events",
+    "autoload": {
+        "psr-4": {
+            "Artengin\\Support\\": "src/"
+        }
+    },
+    "require": {
+        "laravel/framework": ">=11.20",
+        "php": ">=8.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Artengin\\Support\\ComposerEventTesterServiceProvider"
+            ]
+        }
+    },
+    "license": "MIT"
+}
