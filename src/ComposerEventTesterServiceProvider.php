@@ -9,11 +9,11 @@ class ComposerEventTesterServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->app['events']->listen('composer_package.artengin/composer-event-tester:post_install', function () {
-            echo "\n\nPackage installed!\n\n\n";
+            echo PHP_EOL."Package installed!".PHP_EOL;
         });
 
         $this->app['events']->listen('composer_package.artengin/composer-event-tester:pre_uninstall', function () {
-            echo "\n\nPackage will be uninstalled!\n\n\n";
+            echo PHP_EOL."Package will be uninstalled!".PHP_EOL;
         });
     }
 }
